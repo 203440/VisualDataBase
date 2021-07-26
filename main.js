@@ -3,11 +3,7 @@ if (typeof localStorage === "undefined" || localStorage === null) {
     localStorage = new LocalStorage('./scratch');
   }
   require('dotenv').config();
-  
-//localStorage.setItem('Karla', 'Visual');
-//console.log(localStorage.getItem('Karla'));
-//const con = require('./connect');
-var con;
+ var con;
  function login(){
     const user = document.getElementById('user').value;
     const password = document.getElementById('password').value;
@@ -50,8 +46,8 @@ function addData() {
         alert(rows);
     });
     // Input data conection database
+   
 }
-
 
 var Row = null
 
